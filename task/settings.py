@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'task.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('dj_NAME'),
         'USER': os.environ.get('dj_USER'),
         'PASSWORD': os.environ.get('dj_PASSWORD'),
